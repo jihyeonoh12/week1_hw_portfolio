@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+	margin: 0;
+}
+
+/* Reset CSS ends here-------------------------------------------------------------------------*/
+
+body {
+	
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;	
+}
+
+h1, h2, h3, h5 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #4aaaa5;
+	padding: 20px 0px;
+}
+
+h4 {
+	font-size: .8em;
+	padding-top: 25px;
+	color: white;
+}
+
+p { 
+	line-height: 1.3em;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+/* using float------*/
+
+/* .navbar {
+	
+	width: 960px;
+	height: 60px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.navlogo {
+
+	padding: 20px 40px;
+	margin-top: 10px;
+	float: left;
+	font-size: 1.5em;
+
+	background: cadetblue;
+	color: white;
+} */
+
+/* using position------*/
+
+
+.navbar {
+
+	position: relative;
+	left: 0;
+	top: 0;
+
+	width: 960px;
+	height: 70px;
+	margin: 0px auto;
+	/* position: relative; */
+
+	background: white;
+	z-index: 3;
+	
+}
+
+.navlogo {
+
+	background: #4aaaa5;
+	color: white;
+
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	padding: 20px 40px;
+
+	font-size: 1.5em;
+	
+}
+
+
+/* .navlink {
+
+	padding: 20px;
+	float: right;	
+	
+} */
+
+
+.navlink {
+
+	position: absolute;
+	margin: 0;
+	top: 40%;
+	padding: 0;
+	right: 0;
+
+}
+
+
+
+.navmenu {
+
+	color: #777777;
+	text-decoration: none;	
+	font-size: .8em;
+	padding: 0px 20px;
+	
+}
+
+.vl {
+	display: inline-block;
+	width: 1px;
+	height: 11px;
+	background: rgb(196, 196, 196);
+	vertical-align: -2px;
+	
+}
+	
+	/* Vertical line using border-left-------
+	
+	padding: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	width: 50px;
+	height: 10px;
+	overflow: hidden;
+	border-left: 1px solid #000; */
+
+hr {
+	border-top: 1px solid #cccccc;
+}
+
+
+.footer {
+
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #666666;
+	color: gray;
+	text-align: center;
+
+	border-top: 8px solid #4aaaa5;
+
+}
+
+.entire_content {
+
+	background-image: url("../images/dust_scratches.png");
+	background-repeat: repeat;
+	padding-top: 30px;
+	padding-bottom: 100px;
+	
+}
+
+.body_inside {
+	padding: 20px 0px;
+}
+
+
+
+
+/* Profile page */
+
+.profile_body {
+
+	width: 900px;
+	padding: 10px 30px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	height: 500px;
+
+}
+
+.my_photo {
+	width: 250px;
+	height: 200px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	
+}
+
+
+
+
+
+/* portfolio section */
+
+
+
+
+.portfolio_body {
+
+	width: 900px;
+	padding: 10px 30px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	height: 500px;
+
+}
+
+.portfolio_pic {
+	width: 280px;
+	height: 250px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+.portfolio_img {
+	float: left;
+	position: relative;
+	min-height: 100px;
+
+}
+
+.portfolio_body {
+	
+	height: 700px;
+
+}
+
+.portfolio_title {
+	/* padding: 10px 20px; */
+	background: #4aaaa5;
+	color: white;
+	width: 280px;
+	
+	position: absolute;
+	bottom: 50px;
+	padding: 20px 0px;
+	text-align: center;
+	
+}
+
+
+/* Contact Page */
+
+.contact_body {
+
+	width: 900px;
+	padding: 10px 30px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	height: 530px;
+
+}
+
+form {
+	block;
+}
+
+input {
+	width: 890px;
+	height: 30px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.form_msg {
+	height: 150px;
+
+}
+
+.form_button {
+	/* padding: 20px; */
+	width: 100px;
+	height: 40px;
+	font-size: 1em;
+	background: #4aaaa5;
+	color: white;
+	border: none;
+}
